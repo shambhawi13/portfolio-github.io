@@ -1,0 +1,166 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7vw 0 7vw;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.banner .card {
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px 2px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .card .heading {
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding-top: 10vw;
+}
+.header-quotes {
+    font-style: italic;
+    padding-top: 0.5vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.row .image{
+    display: flex;
+    flex-direction: column;
+}
+
+.row .image .name{
+    font-family: "Istok Web", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.row .my-image {
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px;
+    width: 25vw;
+}
+
+.paragraph .header{
+   color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1vw; 
+}
+
+@media only screen and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+    }
+    .row .image {
+        order: -1;
+        align-self: center;
+    }
+    .row .my-image {
+        width: 60vw;
+    }
+    .icon-group {
+    margin-top: 2vh;
+    width: 100% !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    order: -1;
+    }
+    .icon-group .icon {
+    /*margin-right: 10px;*/
+    width: 50%;
+    }
+    .paragraphTechDesc .techDesc {
+    padding-top: 1vw !important;
+    }
+}
+
+.paragraph {
+    color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+    padding: 5vw 5vw 5vw 2vw;
+}
+
+.paragraphTechDesc {
+    color: #2c2c2c;
+    font-family: "Istok Web", sans-serif;
+    padding: 5vw 0 5vw 2vw;
+}
+
+.paragraphTechDesc .techDesc {
+    padding-top: 3vw;
+}
+.icon-group {
+    margin-top: 2vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.icon-group .icon {
+    /*margin-right: 10px;*/
+    height: 62px;
+    width: 25%;
+    padding: 0.4vw 0 0 4vw;
+}
+
+.banner .footer {
+    background-size: 100% 100%;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .icon-group {
+    margin-top: 1vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer .icon-group .icon {
+    height: 40px;
+    width: 10%;
+    padding: 0.4vw 0 0 2vw;
+}
+
+.footer .footer-detail {
+    padding-left: 2vw;
+    padding-top: 1vw;
+    font-family: "Istok Web", sans-serif;
+    font-style: italic;
+}
